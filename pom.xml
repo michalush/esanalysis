@@ -86,12 +86,12 @@
             <version>6.20.0</version>
         </dependency>
 
-        <!--&lt;!&ndash;Elasticsearch&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>io.searchbox</groupId>-->
-            <!--<artifactId>jest</artifactId>-->
-            <!--<version>1.0.0</version>-->
-        <!--</dependency>-->
+        <!--Elasticsearch-->
+        <dependency>
+            <groupId>io.searchbox</groupId>
+            <artifactId>jest</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
         <!--Test-->
         <dependency>
