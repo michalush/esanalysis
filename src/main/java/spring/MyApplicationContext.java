@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 //@ComponentScan(basePackages = {""})
-public class ApplicationContext {
+public class MyApplicationContext {
 
 	@Bean
 	public MyApplication application() {

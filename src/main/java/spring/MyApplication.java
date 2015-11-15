@@ -1,13 +1,12 @@
 package spring;
 
 import frontend.StatisticPage;
-import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 
 public class MyApplication extends WebApplication {
 	@Override
-	public Class<? extends Page> getHomePage() {
+	public Class<StatisticPage> getHomePage() {
 		return StatisticPage.class;
 	}
 
@@ -16,4 +15,6 @@ public class MyApplication extends WebApplication {
 		super.init();
 		getComponentInstantiationListeners().add(new SpringComponentInjector(this));
 	}
+
+
 }
