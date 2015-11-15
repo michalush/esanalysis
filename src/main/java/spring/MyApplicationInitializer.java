@@ -18,6 +18,8 @@ public class MyApplicationInitializer implements WebApplicationInitializer {
 		AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 		ctx.register(MyApplicationContext.class);
 		sc.addListener(new ContextLoaderListener(ctx));
+		sc.addFilter("wicketFilter",
+		             new MyWicketFilter(new MyFilterConfig(sc))).addMappingForUrlPatterns(null, true, "/*");
 
 //		sc.addFilter("springSecurityFilterChain",
 //		             DelegatingFilterProxy.class).addMappingForUrlPatterns(

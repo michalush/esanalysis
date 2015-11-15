@@ -1,7 +1,7 @@
 package frontend;
 
-import org.apache.wicket.Page;
+import org.apache.wicket.markup.html.WebPage;
 
-public class StatisticPage extends Page {
+public class StatisticPage extends WebPage {
 
 }
